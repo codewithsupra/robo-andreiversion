@@ -6,6 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_PAGES ? '/robo-andreiversion/' : '/',
   plugins: [
     react(),
     tailwindcss(),
@@ -16,8 +17,8 @@ export default defineConfig({
         name: 'Robo Friends',
         short_name: 'RoboFriends',
         description: 'Search and browse a directory of robot friends.',
-        start_url: '/',
-        scope: '/',
+        start_url: process.env.GITHUB_PAGES ? '/robo-andreiversion/' : '/',
+        scope: process.env.GITHUB_PAGES ? '/robo-andreiversion/' : '/',
         display: 'standalone',
         background_color: '#0d1b3e',
         theme_color: '#0d1b3e',
