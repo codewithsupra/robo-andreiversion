@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card > matches its snapshot 1`] = `
+<div>
+  <div
+    class="bg-[#01426a] border-2 border-cyan-400/40 rounded-2xl p-5 m-1 shadow-lg shadow-cyan-500/20 transition-transform duration-200 hover:scale-105"
+  >
+    <img
+      alt="not-found"
+      height="200"
+      src="https://robohash.org/1?set=set6"
+      width="200"
+    />
+    <div
+      class="flex flex-col items-center gap-1 mt-2 p-2"
+    >
+      <h2
+        class="text-cyan-300"
+      >
+        Jane Doe
+      </h2>
+      <p
+        class="text-cyan-100/80"
+      >
+        jane@example.com
+      </p>
+    </div>
+  </div>
+</div>
+`;
